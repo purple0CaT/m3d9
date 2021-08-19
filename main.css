@@ -39,3 +39,8 @@ a:hover {
     background-color: white !important;
     color: black !important;
 }
+
+.validated textarea:required:invalid,
+.validated input:required:invalid {
+    border-color: red;
+}

@@ -24,7 +24,8 @@ const loadData = async ()=>{
 
         loadCard(dataBase)
     } catch (err) {
-        console.log(err);
+        errorAlert(err)
+        setTimeout(errorAlert, 3000)
     }
 };
 
@@ -42,4 +43,11 @@ function loadCard(elem){
                 <a class="btn btn-success mt-auto" href="back.html?id=${elem._id}">Edit</a>
             </div>
         `
+}
+
+// error
+function errorAlert(param) {
+    let alert = document.getElementById('errorAlert')
+    alert.innerText = param
+    alert.classList.toggle('d-none')
 }

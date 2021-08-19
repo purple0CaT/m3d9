@@ -24,10 +24,9 @@
                         <span class="sr-only">Loading...</span>
                     </div>
                 </h3>
-                <div class="alert alert-success d-none" role="alert" id="succesAlert">
+                <div class="alert alert-success d-none text-center" role="alert" id="succesAlert">
                 </div>
-                <div class="alert alert-danger d-none" role="alert" id="errorAlert">
-                    A simple success alert—check it out!
+                <div class="alert alert-danger d-none text-center" role="alert" id="errorAlert">
                 </div>
                 <hr>
                 <form onsubmit="submitData(event)" class="d-none">
@@ -53,7 +52,7 @@
                 </div>
                 <hr>
                 <div class="d-flex justify-content-between">
-                    <button type="submit" id="submitBtn" class="btn btn-info">Send</button>
+                    <button type="submit" id="submitBtn" class="btn btn-info" onclick="this.form.classList.add('validated')">Send</button>
                     <button type="button" id="deleteIt" class="btn btn-danger d-none" onclick="deleteItem()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                             <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
