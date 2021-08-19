@@ -40,7 +40,7 @@ function loadCard(datas) {
     datas.forEach(elem => {
         homePage.innerHTML +=`
     <div class="col-6 col-md-3 my-2">
-        <a class="card h-100" href="back.html?id=${elem._id}">
+        <a class="card h-100" href="item.html?id=${elem._id}">
             <img src="${elem.imageUrl}" class="card-img-top mt-1" style="max-height: 15rem;   object-fit: contain;" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${elem.name}</h5>
