@@ -85,11 +85,11 @@ const submitData = async(event)=>{
                 setTimeout(succes, 2500)
                 setTimeout(goHome, 3000)
             }
-            document.getElementById('name').value=''
-            document.getElementById('brand').value=''
-            document.getElementById('description').value=''
-            document.getElementById('imageUrl').value=''
-            document.getElementById('price').value=''
+            // document.getElementById('name').value=''
+            // document.getElementById('brand').value=''
+            // document.getElementById('description').value=''
+            // document.getElementById('imageUrl').value=''
+            // document.getElementById('price').value=''
         } else {
         // IF RESPONSE ERROR
             if (response.status >= 400 && response.status < 500) {
