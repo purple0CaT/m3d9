@@ -35,6 +35,10 @@ a:hover {
     background-color: white;
     color: black
 }
+.header > a:active{
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
 .active {
     background-color: white !important;
     color: black !important;
