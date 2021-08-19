@@ -79,11 +79,11 @@ const submitData = async(event)=>{
             if(itemID){
                 succes(`${respns.name} edited`)
                 setTimeout(succes, 2500)
-                setTimeout(goHome, 3500)
+                setTimeout(goHome, 3000)
             } else {
                 succes(`${respns.name} added to catalouge`)
                 setTimeout(succes, 2500)
-                setTimeout(goHome, 3500)
+                setTimeout(goHome, 3000)
             }
             document.getElementById('name').value=''
             document.getElementById('brand').value=''
@@ -114,11 +114,11 @@ const deleteItem = async()=>{
                 "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTFjZjcwZDJkNTI2MjAwMTViNmRjOTkiLCJpYXQiOjE2MjkyODgyMDUsImV4cCI6MTYzMDQ5NzgwNX0.jHNmjWp6j4MxM-iiSgDtKjZAZdf8sa1Xpvjsm8l4wuc"
             }
         })
-        const respEvent = await response.json()
+        const respns = await response.json()
 
         succes(`${respns.name} deleted`)
         setTimeout(succes, 2500)
-        setTimeout(goHome, 3500)    
+        setTimeout(goHome, 3000)    
     } catch (err) {
         errorAlert(err)
         setTimeout(errorAlert, 2500)    
